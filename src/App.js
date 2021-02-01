@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {lazy, Suspense} from 'react'
+import Loader from './components/UI/loader/Loader'
+const Header = lazy(() => import('./components/header/Header'))
+const Slider = lazy(() => import('./components/slider/Slider'))
+const Features = lazy(() => import('./components/features/Features'))
+const About = lazy(() => import('./components/about/About'))
+const Courses = lazy(() => import('./components/courses/Courses'))
+const Footer = lazy(() => import('./components/footer/Footer'))
+const Action = lazy(() => import('./components/action/Action'))
+const Result = lazy(() => import('./components/result/Result'))
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+        <Suspense fallback={<Loader/>}>
+        <Header />
+        <Slider />
+        <Features />
+        <About />
+        <Courses />
+        <Result />
+        <Action />
+        <Footer />
+      </Suspense>
+    )
+  }
 }
 
-export default App;
+export default App
