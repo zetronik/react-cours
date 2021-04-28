@@ -8,6 +8,7 @@ const Courses = lazy(() => import('./components/courses/Courses'))
 const Footer = lazy(() => import('./components/footer/Footer'))
 const Action = lazy(() => import('./components/action/Action'))
 const Result = lazy(() => import('./components/result/Result'))
+const Program = lazy(() => import('./components/program/Program'))
 
 class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Features />
         <About />
         <Courses />
+        <Program />
         <Result />
         <Action />
         <Footer />

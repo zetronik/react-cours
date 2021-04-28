@@ -16,7 +16,8 @@ function Features(props) {
                                          alt=""/>
                                 </div>
 
-                                <h4 className="mt-3"> Обучение в живом формате</h4>
+                                <h4 className="mt-3">Онлайн обучение <br />
+                                    Доступ 24/7</h4>
                                 <a href="#cta" className="text-primary read-more">
                                     Хочу
                                     <i className="mdi mdi-chevron-right"/></a>
@@ -36,7 +37,7 @@ function Features(props) {
                                          alt=""/>
                                 </div>
 
-                                <h4 className="mt-3"> Ответы на все вопросы </h4>
+                                <h4 className="mt-3"> Доступ 3 месяца </h4>
                                 <a href="#cta" className="text-primary read-more">Хочу
                                     <i className="mdi mdi-chevron-right"/></a>
                                 <img src="../images/icon/graduation-hat.svg" className="full-img" height="300"
@@ -54,7 +55,7 @@ function Features(props) {
                                     <img src="../images/icon/ai.svg" className="avatar avatar-small" alt=""/>
                                 </div>
 
-                                <h4 className="mt-3"> Сертификат об окончании курса, который предоставит ряд бонусов</h4>
+                                <h4 className="mt-3"> Простыми словами о сложном </h4>
                                 <a href="#cta" className="text-primary read-more">Хочу
                                     <i className="mdi mdi-chevron-right"/></a>
                                 <img src="../images/icon/ai.svg" className="full-img" height="300" alt=""/>
